@@ -8,51 +8,49 @@
 <body>
   <header class="header">
     <img class="header__img" src="./eisenhower-matrix.jpg" alt="matrix">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="container">
-    <section>
-      <p id="add-items">
-        <label class="label" for="new-task">Add Item</label>
-        <div class="task-wrapper">
-          <input id="new-task" class="input task" type="text">
-          <button class="btn">Add</button>
-        </div>
-      </p>
+    <section class="new-task">
+      <label class="label new-task__label" for="new-task">Add Item</label>
+      <div class="new-task__wrapper">
+        <input id="new-task" class="input task new-task__item" type="text">
+        <button class="btn new-task__btn">Add</button>
+      </div>
     </section>
-    <section>
-      <h3 class="title">Todo</h3>
-      <ul id="incomplete-tasks">
-        <li class="task-note">
-          <input class="input checkbox" type="checkbox">
-          <label class="label task">Pay Bills</label>
-          <input class="input task" type="text">
-          <button class="btn edit">Edit</button>
-          <button class="btn del">
-            <img class="rotate" src="./remove.svg" alt="remove">
+    <section class="todo-tasks">
+      <h3 class="title todo-tasks__title">Todo</h3>
+      <ul id="incomplete-tasks" class="todo-tasks__list">
+        <li class="task-note todo-tasks__note">
+          <input class="input checkbox task-note__checkbox" type="checkbox">
+          <label class="label task task-note__label">Pay Bills</label>
+          <input class="input task task-note__field" type="text">
+          <button class="btn edit task-note__edit-btn">Edit</button>
+          <button class="btn del task-note__del-btn">
+            <img class="rotate task-note__del-img" src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="task-note edit-mode">
-          <input class="input checkbox" type="checkbox">
-          <label class="label task">Go Shopping</label>
-          <input class="input task" type="text" value="Go Shopping">
-          <button class="btn edit">Save</button>
-          <button class="btn del">
-            <img class="rotate" src="./remove.svg" alt="remove">
+        <li class="task-note edit-mode todo-tasks__note">
+          <input class="input checkbox task-note__checkbox" type="checkbox">
+          <label class="label task task-note__label">Go Shopping</label>
+          <input class="input task task-note__field" type="text" value="Go Shopping">
+          <button class="btn edit task-note__save-btn">Save</button>
+          <button class="btn del task-note__del-btn">
+            <img class="rotate task-note__del-img" src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
     </section>
-    <section>
-      <h3 class="title">Completed</h3>
-      <ul id="completed-tasks">
-        <li class="task-note">
-          <input class="input checkbox" type="checkbox" checked>
-          <label class="label task">See the Doctor</label>
-          <input class="input task" type="text">
-          <button class="btn edit">Edit</button>
-          <button class="btn del">
-            <img class="rotate" src="./remove.svg" alt="remove">
+    <section class="completed">
+      <h3 class="title completed__title">Completed</h3>
+      <ul id="completed-tasks" class="completed-tasks__list">
+        <li class="task-note completed-tasks__note">
+          <input class="input checkbox task-note__checkbox" type="checkbox" checked>
+          <label class="label task task-note__label">See the Doctor</label>
+          <input class="input task task-note__field" type="text">
+          <button class="btn edit task-note__edit-btn">Edit</button>
+          <button class="btn del task-note__del-btn">
+            <img class="rotate task-note__del-img" src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
