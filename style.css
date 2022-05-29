@@ -43,7 +43,8 @@ body {
   display: flex;
 }
 
-#incomplete-tasks, #completed-tasks {
+#incomplete-tasks,
+#completed-tasks {
   margin: 0;
   padding: 0px;
 }
@@ -52,7 +53,8 @@ body {
   list-style: none;
 }
 
-.input, .btn{
+.input,
+.btn{
   outline: none;
 }
 
